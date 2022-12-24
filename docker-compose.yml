@@ -7,6 +7,10 @@ services:
       - 7700:7700
     env_file:
       - .env
+  frontend:
+    build: .
+    ports:
+      - 8080:80
 
 volumes:
   meilei_data:

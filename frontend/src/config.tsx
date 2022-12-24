@@ -1,5 +1,5 @@
 export const MEILI_CONFIG = {
-    host: 'http://localhost:7700',
+    host: 'http://search:7700',
     apiKey: 'MASTER_KEY',
 };
 
