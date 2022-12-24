@@ -83,6 +83,8 @@ async def fetch_content(link) -> str:
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get(link, verify_ssl=False) as response:
+                if response.status >= 400:
+                    raise Exception(f"Invalid status code {response.status}: {link}")
                 return await response.text()
     except UnicodeDecodeError:
         print("Link:", link)
