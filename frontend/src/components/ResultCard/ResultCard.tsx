@@ -32,7 +32,7 @@ function ResultCard({ result }: ResultCardProps) {
                     </Card.Body>
                 </Col>
                 {result.image && (
-                    <Col md={4}>
+                    <Col md={4} className="d-none d-md-block">
                         <Image src={result.image} alt={result.title} fluid className="rounded-end" />
                     </Col>
                 )}

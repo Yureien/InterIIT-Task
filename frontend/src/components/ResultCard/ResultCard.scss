@@ -1,5 +1,8 @@
+@import "~bootstrap/scss/bootstrap";
+
 .result-card {
     cursor: pointer;
+    width: 100%;
 
     img {
         max-height: 220px;

@@ -37,9 +37,9 @@ function App() {
       hitsComponent = <p>No results found!</p>;
     } else {
       hitsComponent = (
-        <ul>
+        <>
           {hits.map((hit) => <ResultCard result={hit} key={hit.id} />)}
-        </ul>
+        </>
       );
     }
   }
@@ -48,7 +48,9 @@ function App() {
     <Container>
       <div className="d-flex flex-column align-items-center search-container">
         <h1 className="logo-text">Not Google</h1>
-        <Form.Control className="search-input" type="text" placeholder="Search..." size="lg" onInput={search} />
+        <span className="input">
+          <Form.Control className="search-input" type="text" placeholder="Search..." size="lg" onInput={search} />
+        </span>
       </div>
       <div className='d-flex flex-column align-items-center results-container'>
         {hitsComponent}
