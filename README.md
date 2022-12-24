@@ -1,5 +1,10 @@
 # InterIIT-Task
 
+## Demo
+
+[!Demo](https://user-images.githubusercontent.com/17357089/209448060-5338deb9-027f-4a6a-b33a-6273bb20f83d.webm)
+
+
 ## Implementation Process
 
 The task was to implement a closed search engine (a knowledge base) where the user can search any data from pages defined in a [specified file](scraper/saved_links.json).
