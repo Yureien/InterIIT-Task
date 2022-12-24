@@ -15,14 +15,14 @@ The body content is used as a fallback if the meta description tag is not presen
 
 To improve the speed, the scraper processes requests asynchronously, upto 10 at a time together.
 
-The frontend directly fetches data from the databsae and displays it in a material-ish fashion.
+The frontend directly fetches data from the database and displays it in a material-ish fashion.
 
 ### Possible Improvements
 
 - The search engine can be finetuned further to improve accuracy of matches. I did a basic optimization, and I am sure better ranking rules and weights can be obtained by further finetuning the settings.
 - A page rank of the website can be fetched from the internet via some services available online. I did not implement this cause (1) they are usually paid, and (2) it might skew the results (ex. the user might find some pages with low rankings more useful).
 - Currently, the body text is parsed as-is by stripping the HTML tags and scripts. However, this results in some ugly text for websites that are not properly built (especially the ones which do not have better meta attributes, and are heavily JavaScript reliant). A better option will be to run a neural network, maybe a BERT, to generate a description or atleast tags for the HTML content. Also, a better scraper can be implemented by scraping by executing the JavaScript, since React/similar-based sites do not have any proper HTML unless they are rendered server-side.
-- The frontend can probably be improved but I am not a frontend guy, so I don't know.
+- The frontend can probably be improved but I am not a design guy, so I don't know.
 
 ## Installation
 
