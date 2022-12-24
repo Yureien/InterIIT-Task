@@ -1,0 +1,12 @@
+services:
+  search:
+    image: getmeili/meilisearch:latest
+    volumes:
+      - meilei_data:/meili_data
+    ports:
+      - 7700:7700
+    env_file:
+      - .env
+
+volumes:
+  meilei_data:

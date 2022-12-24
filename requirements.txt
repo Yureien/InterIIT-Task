@@ -1,0 +1,5 @@
+aiohttp~=3.8.3
+meilisearch~=0.23.0
+beautifulsoup4~=4.11.1
+python-dotenv~=0.20.0
+requests~=2.26.0
